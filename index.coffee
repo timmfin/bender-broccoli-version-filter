@@ -40,7 +40,7 @@ class VersionFilter extends Filter
     # Don't need to interpolate folders copied out of the archive (that already
     # have a version number in them)
 
-    if utils.containsHardcodedStaticVersionInPath  relativePath
+    if utils.containsHardcodedStaticVersionInPath relativePath
       false
     else
       super relativePath
