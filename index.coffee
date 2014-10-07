@@ -27,6 +27,7 @@ class VersionFilter extends Filter
     if !(this instanceof VersionFilter)
       return new VersionFilter(inputTree, options)
 
+    super
     { @benderContext } = @options
 
     throw new Error "No benderContext passed into VersionFilter options" unless @benderContext?
