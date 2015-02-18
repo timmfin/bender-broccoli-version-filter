@@ -1,10 +1,10 @@
-Filter = require('broccoli-filter')
+TieredCachingWriter = require('broccoli-tiered-caching-writer')
 path = require('path')
 
 utils = require('bender-broccoli-utils')
 
 
-class VersionFilter extends Filter
+class VersionFilter extends TieredCachingWriter
 
   # Default extensions to insert versions into
   extensions: [
