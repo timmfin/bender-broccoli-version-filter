@@ -33,7 +33,7 @@ class VersionFilter extends TieredCachingWriter
     throw new Error "No benderContext passed into VersionFilter options" unless @benderContext?
 
   processString: (str, relativePath) ->
-    project = @benderContext.getProject utils.extractProjectFromPath(relativePath)
+    project = @benderContext.getProjectFromPath relativePath
     project.interpolateVersionsIntoString str
 
   canProcessFile: (relativePath) ->
