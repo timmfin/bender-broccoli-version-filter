@@ -7,7 +7,7 @@
     "url": "https://github.com/HubSpot/bender-broccoli-version-filter"
   },
   "dependencies": {
-    "bender-broccoli-utils": "git://github.com/timmfin/bender-broccoli-utils.git",
+    "bender-broccoli-utils": "timmfin/bender-broccoli-utils",
     "broccoli-tiered-caching-writer": "git://github.com/timmfin/broccoli-tiered-caching-writer"
   },
   "scripts": {
