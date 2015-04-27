@@ -9,5 +9,15 @@
   "dependencies": {
     "bender-broccoli-utils": "git://github.com/timmfin/bender-broccoli-utils.git",
     "broccoli-tiered-caching-writer": "git://github.com/timmfin/broccoli-tiered-caching-writer"
+  },
+  "scripts": {
+    "build": "./compile-coffeescript.sh",
+    "watch": "./watch-coffeescript.sh",
+    "clean": "./clean.sh",
+    "prepublish": "./compile-coffeescript.sh",
+    "postinstall": "./run-prepublish-if-not-already-run.sh"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.2"
   }
 }
