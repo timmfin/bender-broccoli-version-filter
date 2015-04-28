@@ -23,7 +23,7 @@ class VersionFilter extends TieredCachingWriter
     'lyaml'
   ]
 
-  constructor: (@inputTree, @options = {}) ->
+  constructor: (inputTree, @options = {}) ->
     if !(this instanceof VersionFilter)
       return new VersionFilter(inputTree, options)
 
