@@ -10,6 +10,7 @@ class VersionFilter extends TieredCachingWriter
   extensions: [
     'js'
     'coffee'
+    'cjsx'
 
     'css'
     'sass'
