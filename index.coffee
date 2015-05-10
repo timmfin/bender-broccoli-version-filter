@@ -3,6 +3,8 @@ path = require('path')
 
 utils = require('bender-broccoli-utils')
 
+MaybeFilter = require('./maybe-filter')
+
 
 class VersionFilter extends TieredCachingWriter
 
@@ -28,7 +30,9 @@ class VersionFilter extends TieredCachingWriter
     if !(this instanceof VersionFilter)
       return new VersionFilter(inputTree, options)
 
-    super
+    @options.FilterConstructor ?= MaybeFilter
+
+    super(inputTree, @options)
     { @benderContext } = @options
 
     throw new Error "No benderContext passed into VersionFilter options" unless @benderContext?

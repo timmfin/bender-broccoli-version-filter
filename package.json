@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "bender-broccoli-utils": "timmfin/bender-broccoli-utils",
-    "broccoli-tiered-caching-writer": "git://github.com/timmfin/broccoli-tiered-caching-writer"
+    "broccoli-tiered-caching-writer": "git://github.com/timmfin/broccoli-tiered-caching-writer",
+    "symlink-or-copy": "^1.0.1"
   },
   "scripts": {
     "build": "./compile-coffeescript.sh",
