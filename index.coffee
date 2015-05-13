@@ -7,6 +7,7 @@ MaybeFilter = require('./maybe-filter')
 
 
 class VersionFilter extends TieredCachingWriter
+  description: 'VersionFilter'
 
   # Default extensions to insert versions into
   extensions: [
