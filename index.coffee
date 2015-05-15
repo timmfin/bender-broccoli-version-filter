@@ -9,6 +9,9 @@ MaybeFilter = require('./maybe-filter')
 class VersionFilter extends TieredCachingWriter
   description: 'VersionFilter'
 
+  # Save the inner broccoli-filter cache to disk
+  cacheByContent: true
+
   # Default extensions to insert versions into
   extensions: [
     'js'
