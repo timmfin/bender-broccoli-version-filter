@@ -43,7 +43,7 @@ class VersionFilter extends TieredCachingWriter
 
   processString: (str, relativePath) ->
     project = @benderContext.getProjectFromPath relativePath
-    project.interpolateVersionsIntoString str
+    @benderContext.interpolateProjectVersionsIntoString project, str
 
   canProcessFile: (relativePath) ->
     # Don't need to interpolate folders copied out of the archive (that already
