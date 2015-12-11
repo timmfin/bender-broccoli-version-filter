@@ -1,4 +1,4 @@
-TieredCachingWriter = require('broccoli-tiered-caching-writer')
+PersistentFilter = require('broccoli-persistent-filter')
 path = require('path')
 
 utils = require('bender-broccoli-utils')
@@ -6,7 +6,7 @@ utils = require('bender-broccoli-utils')
 MaybeFilter = require('./maybe-filter')
 
 
-class VersionFilter extends TieredCachingWriter
+class VersionFilter extends PersistentFilter
   description: 'VersionFilter'
 
   # Save the inner broccoli-filter cache to disk
@@ -34,7 +34,7 @@ class VersionFilter extends TieredCachingWriter
     if !(this instanceof VersionFilter)
       return new VersionFilter(inputTree, options)
 
-    @options.FilterConstructor ?= MaybeFilter
+    # @options.FilterConstructor ?= MaybeFilter
 
     super(inputTree, @options)
     { @benderContext } = @options

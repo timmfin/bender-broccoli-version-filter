@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "bender-broccoli-utils": "timmfin/bender-broccoli-utils",
+    "broccoli-filter": "^1.2.2",
+    "broccoli-persistent-filter": "^1.1.6",
     "broccoli-tiered-caching-writer": "git://github.com/timmfin/broccoli-tiered-caching-writer",
     "symlink-or-copy": "^1.0.1"
   },
